@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Console appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Simple layout -->
+            <pattern>
+                %highlight(%-5level) %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger -->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Package-specific logging (optional, remove if not needed) -->
+    <logger name="org.springframework" level="info"/>
+    <logger name="com.cognizant" level="debug"/>
+</configuration>
