@@ -1,0 +1,122 @@
+/* Font & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Container */
+.App {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Button group */
+.button-group {
+  margin-bottom: 2rem;
+}
+
+.button-group button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 242, 254, 0.3);
+}
+
+.button-group button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 242, 254, 0.4);
+}
+
+/* Conditional message */
+.info {
+  color: #ff4757;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Details section */
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Cards */
+.component-box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.component-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.component-box h2 {
+  color: #3742fa;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ced6e0;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.detail-item {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.detail-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2f3542;
+}
+
+.detail-item p {
+  margin: 2px 0;
+  color: #57606f;
+  font-size: 0.95rem;
+}
+
+/* Divider (optional for multi-column view) */
+.divider {
+  width: 2px;
+  background-color: #1dd1a1;
+  margin: 0 1rem;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider {
+    display: none;
+  }
+}
